@@ -1,0 +1,325 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FC1244521CB336CC00594E0D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1244511CB336CC00594E0D /* main.m */; };
+		FC1244551CB336CC00594E0D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1244541CB336CC00594E0D /* AppDelegate.m */; };
+		FC1244581CB336CC00594E0D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1244571CB336CC00594E0D /* ViewController.m */; };
+		FC12445B1CB336CC00594E0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC1244591CB336CC00594E0D /* Main.storyboard */; };
+		FC12445E1CB336CC00594E0D /* Victor.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC12445C1CB336CC00594E0D /* Victor.xcdatamodeld */; };
+		FC1244601CB336CC00594E0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC12445F1CB336CC00594E0D /* Assets.xcassets */; };
+		FC1244631CB336CC00594E0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC1244611CB336CC00594E0D /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FC12444D1CB336CC00594E0D /* Victor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Victor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC1244511CB336CC00594E0D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FC1244531CB336CC00594E0D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FC1244541CB336CC00594E0D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FC1244561CB336CC00594E0D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FC1244571CB336CC00594E0D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FC12445A1CB336CC00594E0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FC12445D1CB336CC00594E0D /* Victor.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Victor.xcdatamodel; sourceTree = "<group>"; };
+		FC12445F1CB336CC00594E0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FC1244621CB336CC00594E0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FC1244641CB336CC00594E0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC12444A1CB336CC00594E0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FC1244441CB336CC00594E0D = {
+			isa = PBXGroup;
+			children = (
+				FC12444F1CB336CC00594E0D /* Victor */,
+				FC12444E1CB336CC00594E0D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FC12444E1CB336CC00594E0D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC12444D1CB336CC00594E0D /* Victor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC12444F1CB336CC00594E0D /* Victor */ = {
+			isa = PBXGroup;
+			children = (
+				FC1244531CB336CC00594E0D /* AppDelegate.h */,
+				FC1244541CB336CC00594E0D /* AppDelegate.m */,
+				FC1244561CB336CC00594E0D /* ViewController.h */,
+				FC1244571CB336CC00594E0D /* ViewController.m */,
+				FC1244591CB336CC00594E0D /* Main.storyboard */,
+				FC12445F1CB336CC00594E0D /* Assets.xcassets */,
+				FC1244611CB336CC00594E0D /* LaunchScreen.storyboard */,
+				FC1244641CB336CC00594E0D /* Info.plist */,
+				FC12445C1CB336CC00594E0D /* Victor.xcdatamodeld */,
+				FC1244501CB336CC00594E0D /* Supporting Files */,
+			);
+			path = Victor;
+			sourceTree = "<group>";
+		};
+		FC1244501CB336CC00594E0D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC1244511CB336CC00594E0D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC12444C1CB336CC00594E0D /* Victor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC1244671CB336CC00594E0D /* Build configuration list for PBXNativeTarget "Victor" */;
+			buildPhases = (
+				FC1244491CB336CC00594E0D /* Sources */,
+				FC12444A1CB336CC00594E0D /* Frameworks */,
+				FC12444B1CB336CC00594E0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Victor;
+			productName = Victor;
+			productReference = FC12444D1CB336CC00594E0D /* Victor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC1244451CB336CC00594E0D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Thomas Friesman";
+				TargetAttributes = {
+					FC12444C1CB336CC00594E0D = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 886ADMR9E3;
+					};
+				};
+			};
+			buildConfigurationList = FC1244481CB336CC00594E0D /* Build configuration list for PBXProject "Victor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FC1244441CB336CC00594E0D;
+			productRefGroup = FC12444E1CB336CC00594E0D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC12444C1CB336CC00594E0D /* Victor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC12444B1CB336CC00594E0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC1244631CB336CC00594E0D /* LaunchScreen.storyboard in Resources */,
+				FC1244601CB336CC00594E0D /* Assets.xcassets in Resources */,
+				FC12445B1CB336CC00594E0D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC1244491CB336CC00594E0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC1244581CB336CC00594E0D /* ViewController.m in Sources */,
+				FC1244551CB336CC00594E0D /* AppDelegate.m in Sources */,
+				FC12445E1CB336CC00594E0D /* Victor.xcdatamodeld in Sources */,
+				FC1244521CB336CC00594E0D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FC1244591CB336CC00594E0D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC12445A1CB336CC00594E0D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FC1244611CB336CC00594E0D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC1244621CB336CC00594E0D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FC1244651CB336CC00594E0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FC1244661CB336CC00594E0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FC1244681CB336CC00594E0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Victor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "LHL-assignment.Victor";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FC1244691CB336CC00594E0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Victor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "LHL-assignment.Victor";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC1244481CB336CC00594E0D /* Build configuration list for PBXProject "Victor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC1244651CB336CC00594E0D /* Debug */,
+				FC1244661CB336CC00594E0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC1244671CB336CC00594E0D /* Build configuration list for PBXNativeTarget "Victor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC1244681CB336CC00594E0D /* Debug */,
+				FC1244691CB336CC00594E0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FC12445C1CB336CC00594E0D /* Victor.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FC12445D1CB336CC00594E0D /* Victor.xcdatamodel */,
+			);
+			currentVersion = FC12445D1CB336CC00594E0D /* Victor.xcdatamodel */;
+			path = Victor.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FC1244451CB336CC00594E0D /* Project object */;
+}
