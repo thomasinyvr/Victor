@@ -15,6 +15,7 @@
 
 @interface WelcomeVC : UIViewController
 
+- (IBAction)startButtonTapped:(UIButton *)sender;
 
 @property (weak, nonatomic) IBOutlet UIView *blankVideoView;
 

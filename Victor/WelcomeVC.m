@@ -7,7 +7,7 @@
 //
 
 #import "WelcomeVC.h"
-
+#import "Top10CVC.h"
 @interface WelcomeVC ()
 
 @end
@@ -60,5 +60,23 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+
+
+
+- (IBAction)startButtonTapped:(UIButton *)sender {
+    [self performSegueWithIdentifier:@"showTop10Screen" sender:self];
+
+    
+    
+}
+
+
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+
+//        Top10CVC *top10CVC = [segue destinationViewController];
+
+}
+
 
 @end
