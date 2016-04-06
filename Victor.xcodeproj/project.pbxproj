@@ -9,11 +9,17 @@
 /* Begin PBXBuildFile section */
 		FC1244521CB336CC00594E0D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1244511CB336CC00594E0D /* main.m */; };
 		FC1244551CB336CC00594E0D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1244541CB336CC00594E0D /* AppDelegate.m */; };
-		FC1244581CB336CC00594E0D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1244571CB336CC00594E0D /* ViewController.m */; };
 		FC12445B1CB336CC00594E0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC1244591CB336CC00594E0D /* Main.storyboard */; };
 		FC12445E1CB336CC00594E0D /* Victor.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC12445C1CB336CC00594E0D /* Victor.xcdatamodeld */; };
 		FC1244601CB336CC00594E0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC12445F1CB336CC00594E0D /* Assets.xcassets */; };
 		FC1244631CB336CC00594E0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC1244611CB336CC00594E0D /* LaunchScreen.storyboard */; };
+		FCB185371CB58AA2003B8A99 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB185361CB58AA2003B8A99 /* MasterViewController.m */; };
+		FCB1853A1CB58ACB003B8A99 /* CategoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB185391CB58ACB003B8A99 /* CategoryTableViewController.m */; };
+		FCB1853D1CB58ADE003B8A99 /* ItemTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB1853C1CB58ADE003B8A99 /* ItemTableViewController.m */; };
+		FCB185401CB58AEC003B8A99 /* ItemDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB1853F1CB58AEC003B8A99 /* ItemDetailViewController.m */; };
+		FCB185431CB58F6D003B8A99 /* FavoritesModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FCB185411CB58F6D003B8A99 /* FavoritesModel.xcdatamodeld */; };
+		FCB185461CB58FEC003B8A99 /* VictorCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB185451CB58FEC003B8A99 /* VictorCoreDataStack.m */; };
+		FCB185491CB593F8003B8A99 /* TVShows.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB185481CB593F8003B8A99 /* TVShows.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,13 +27,24 @@
 		FC1244511CB336CC00594E0D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FC1244531CB336CC00594E0D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FC1244541CB336CC00594E0D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FC1244561CB336CC00594E0D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FC1244571CB336CC00594E0D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		FC12445A1CB336CC00594E0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FC12445D1CB336CC00594E0D /* Victor.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Victor.xcdatamodel; sourceTree = "<group>"; };
 		FC12445F1CB336CC00594E0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC1244621CB336CC00594E0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC1244641CB336CC00594E0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCB185351CB58AA2003B8A99 /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		FCB185361CB58AA2003B8A99 /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		FCB185381CB58ACB003B8A99 /* CategoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CategoryTableViewController.h; path = ../CategoryTableViewController.h; sourceTree = "<group>"; };
+		FCB185391CB58ACB003B8A99 /* CategoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CategoryTableViewController.m; path = ../CategoryTableViewController.m; sourceTree = "<group>"; };
+		FCB1853B1CB58ADE003B8A99 /* ItemTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ItemTableViewController.h; path = ../ItemTableViewController.h; sourceTree = "<group>"; };
+		FCB1853C1CB58ADE003B8A99 /* ItemTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ItemTableViewController.m; path = ../ItemTableViewController.m; sourceTree = "<group>"; };
+		FCB1853E1CB58AEC003B8A99 /* ItemDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ItemDetailViewController.h; path = ../ItemDetailViewController.h; sourceTree = "<group>"; };
+		FCB1853F1CB58AEC003B8A99 /* ItemDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ItemDetailViewController.m; path = ../ItemDetailViewController.m; sourceTree = "<group>"; };
+		FCB185421CB58F6D003B8A99 /* FavoritesModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FavoritesModel.xcdatamodel; sourceTree = "<group>"; };
+		FCB185441CB58FEC003B8A99 /* VictorCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VictorCoreDataStack.h; sourceTree = "<group>"; };
+		FCB185451CB58FEC003B8A99 /* VictorCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VictorCoreDataStack.m; sourceTree = "<group>"; };
+		FCB185471CB593F8003B8A99 /* TVShows.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVShows.h; sourceTree = "<group>"; };
+		FCB185481CB593F8003B8A99 /* TVShows.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVShows.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +79,19 @@
 			children = (
 				FC1244531CB336CC00594E0D /* AppDelegate.h */,
 				FC1244541CB336CC00594E0D /* AppDelegate.m */,
-				FC1244561CB336CC00594E0D /* ViewController.h */,
-				FC1244571CB336CC00594E0D /* ViewController.m */,
+				FCB185471CB593F8003B8A99 /* TVShows.h */,
+				FCB185481CB593F8003B8A99 /* TVShows.m */,
+				FCB185351CB58AA2003B8A99 /* MasterViewController.h */,
+				FCB185361CB58AA2003B8A99 /* MasterViewController.m */,
+				FCB185381CB58ACB003B8A99 /* CategoryTableViewController.h */,
+				FCB185391CB58ACB003B8A99 /* CategoryTableViewController.m */,
+				FCB1853B1CB58ADE003B8A99 /* ItemTableViewController.h */,
+				FCB1853C1CB58ADE003B8A99 /* ItemTableViewController.m */,
+				FCB1853E1CB58AEC003B8A99 /* ItemDetailViewController.h */,
+				FCB1853F1CB58AEC003B8A99 /* ItemDetailViewController.m */,
+				FCB185411CB58F6D003B8A99 /* FavoritesModel.xcdatamodeld */,
+				FCB185441CB58FEC003B8A99 /* VictorCoreDataStack.h */,
+				FCB185451CB58FEC003B8A99 /* VictorCoreDataStack.m */,
 				FC1244591CB336CC00594E0D /* Main.storyboard */,
 				FC12445F1CB336CC00594E0D /* Assets.xcassets */,
 				FC1244611CB336CC00594E0D /* LaunchScreen.storyboard */,
@@ -153,10 +181,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC1244581CB336CC00594E0D /* ViewController.m in Sources */,
 				FC1244551CB336CC00594E0D /* AppDelegate.m in Sources */,
+				FCB185371CB58AA2003B8A99 /* MasterViewController.m in Sources */,
+				FCB185461CB58FEC003B8A99 /* VictorCoreDataStack.m in Sources */,
+				FCB185401CB58AEC003B8A99 /* ItemDetailViewController.m in Sources */,
+				FCB185491CB593F8003B8A99 /* TVShows.m in Sources */,
 				FC12445E1CB336CC00594E0D /* Victor.xcdatamodeld in Sources */,
+				FCB1853A1CB58ACB003B8A99 /* CategoryTableViewController.m in Sources */,
+				FCB1853D1CB58ADE003B8A99 /* ItemTableViewController.m in Sources */,
 				FC1244521CB336CC00594E0D /* main.m in Sources */,
+				FCB185431CB58F6D003B8A99 /* FavoritesModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +339,7 @@
 				FC1244691CB336CC00594E0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
@@ -316,6 +351,16 @@
 			);
 			currentVersion = FC12445D1CB336CC00594E0D /* Victor.xcdatamodel */;
 			path = Victor.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		FCB185411CB58F6D003B8A99 /* FavoritesModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FCB185421CB58F6D003B8A99 /* FavoritesModel.xcdatamodel */,
+			);
+			currentVersion = FCB185421CB58F6D003B8A99 /* FavoritesModel.xcdatamodel */;
+			path = FavoritesModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
