@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="3rV-Os-VxW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hyi-6d-IR3">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--WelcomeVC-->
         <scene sceneID="apv-m0-Xse">
             <objects>
-                <viewController id="hyi-6d-IR3" sceneMemberID="viewController">
+                <viewController id="hyi-6d-IR3" customClass="WelcomeVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mDc-8r-MCC"/>
                         <viewControllerLayoutGuide type="bottom" id="mL2-sv-byU"/>
@@ -16,9 +16,63 @@
                     <view key="view" contentMode="scaleToFill" id="RC6-p9-QgX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Welcome,shopper!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JKb-OO-3Oz">
+                                <rect key="frame" x="7" y="47" width="201" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aQd-SI-uw5">
+                                <rect key="frame" x="80" y="519" width="240" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap above to begin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hxn-Vd-WDw">
+                                <rect key="frame" x="114" y="483" width="146" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vTF-ra-Ymk">
+                                <rect key="frame" x="12" y="239" width="350" height="190"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HOME OF TV SHOWS MEMORABILIA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gd5-F0-06K">
+                                        <rect key="frame" x="33" y="46" width="285" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="190" id="l2p-Au-ATm"/>
+                                    <constraint firstAttribute="width" constant="350" id="vJT-ir-Ox7"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vTF-ra-Ymk" firstAttribute="centerY" secondItem="RC6-p9-QgX" secondAttribute="centerY" id="5M5-0d-tv7"/>
+                            <constraint firstItem="vTF-ra-Ymk" firstAttribute="centerX" secondItem="RC6-p9-QgX" secondAttribute="centerX" id="GIr-Nm-zFL"/>
+                            <constraint firstItem="vTF-ra-Ymk" firstAttribute="centerX" secondItem="RC6-p9-QgX" secondAttribute="centerX" id="VXK-OZ-WOq"/>
+                            <constraint firstItem="vTF-ra-Ymk" firstAttribute="leading" secondItem="RC6-p9-QgX" secondAttribute="leading" constant="13" id="e8z-BR-eYT"/>
+                            <constraint firstItem="vTF-ra-Ymk" firstAttribute="centerY" secondItem="RC6-p9-QgX" secondAttribute="centerY" id="vhc-fH-IYK"/>
+                            <constraint firstItem="vTF-ra-Ymk" firstAttribute="top" secondItem="JKb-OO-3Oz" secondAttribute="bottom" constant="53" id="yyI-s4-qmX"/>
+                            <constraint firstAttribute="trailing" secondItem="vTF-ra-Ymk" secondAttribute="trailing" constant="13" id="zCB-AQ-bJt"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="GIr-Nm-zFL"/>
+                                <exclude reference="e8z-BR-eYT"/>
+                                <exclude reference="vhc-fH-IYK"/>
+                                <exclude reference="yyI-s4-qmX"/>
+                                <exclude reference="zCB-AQ-bJt"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="blankVideoView" destination="vTF-ra-Ymk" id="ObT-8Y-mIR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GKl-CT-Ifh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -109,7 +163,7 @@
                                     <outlet property="delegate" destination="3rV-Os-VxW" id="V11-QQ-I5u"/>
                                 </connections>
                             </collectionView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shows-title" translatesAutoresizingMaskIntoConstraints="NO" id="HEa-D0-GVR">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="shows-title" translatesAutoresizingMaskIntoConstraints="NO" id="HEa-D0-GVR">
                                 <rect key="frame" x="160" y="54" width="195" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="195" id="a7V-iZ-ngs"/>

@@ -7,19 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0525215B1CB5AA6500F1E1C5 /* Cat_Video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 052521551CB5AA6500F1E1C5 /* Cat_Video.mp4 */; };
+		0525215C1CB5AA6500F1E1C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 052521561CB5AA6500F1E1C5 /* Main.storyboard */; };
+		0525215D1CB5AA6500F1E1C5 /* PlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 052521581CB5AA6500F1E1C5 /* PlayerView.m */; };
+		0525215E1CB5AA6500F1E1C5 /* WelcomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0525215A1CB5AA6500F1E1C5 /* WelcomeVC.m */; };
 		05D280CD1CB33C65000F16C5 /* Top10CVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D280CC1CB33C65000F16C5 /* Top10CVC.m */; };
 		05D280D01CB33CEA000F16C5 /* Show.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D280CF1CB33CEA000F16C5 /* Show.m */; };
 		05D280D31CB33D3E000F16C5 /* Top10CVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D280D21CB33D3E000F16C5 /* Top10CVCell.m */; };
 		05D280D61CB33DB3000F16C5 /* HeaderCRView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D280D51CB33DB3000F16C5 /* HeaderCRView.m */; };
 		FC1244521CB336CC00594E0D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1244511CB336CC00594E0D /* main.m */; };
 		FC1244551CB336CC00594E0D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1244541CB336CC00594E0D /* AppDelegate.m */; };
-		FC12445B1CB336CC00594E0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC1244591CB336CC00594E0D /* Main.storyboard */; };
 		FC12445E1CB336CC00594E0D /* Victor.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC12445C1CB336CC00594E0D /* Victor.xcdatamodeld */; };
 		FC1244601CB336CC00594E0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC12445F1CB336CC00594E0D /* Assets.xcassets */; };
 		FC1244631CB336CC00594E0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC1244611CB336CC00594E0D /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		052521551CB5AA6500F1E1C5 /* Cat_Video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cat_Video.mp4; sourceTree = "<group>"; };
+		052521561CB5AA6500F1E1C5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		052521571CB5AA6500F1E1C5 /* PlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerView.h; sourceTree = "<group>"; };
+		052521581CB5AA6500F1E1C5 /* PlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerView.m; sourceTree = "<group>"; };
+		052521591CB5AA6500F1E1C5 /* WelcomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeVC.h; sourceTree = "<group>"; };
+		0525215A1CB5AA6500F1E1C5 /* WelcomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeVC.m; sourceTree = "<group>"; };
 		05D280CB1CB33C65000F16C5 /* Top10CVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Top10CVC.h; path = ../Top10CVC.h; sourceTree = "<group>"; };
 		05D280CC1CB33C65000F16C5 /* Top10CVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Top10CVC.m; path = ../Top10CVC.m; sourceTree = "<group>"; };
 		05D280CE1CB33CEA000F16C5 /* Show.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Show.h; sourceTree = "<group>"; };
@@ -32,7 +41,6 @@
 		FC1244511CB336CC00594E0D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FC1244531CB336CC00594E0D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FC1244541CB336CC00594E0D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FC12445A1CB336CC00594E0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FC12445D1CB336CC00594E0D /* Victor.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Victor.xcdatamodel; sourceTree = "<group>"; };
 		FC12445F1CB336CC00594E0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC1244621CB336CC00594E0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -79,7 +87,12 @@
 				05D280D51CB33DB3000F16C5 /* HeaderCRView.m */,
 				05D280CE1CB33CEA000F16C5 /* Show.h */,
 				05D280CF1CB33CEA000F16C5 /* Show.m */,
-				FC1244591CB336CC00594E0D /* Main.storyboard */,
+				052521551CB5AA6500F1E1C5 /* Cat_Video.mp4 */,
+				052521561CB5AA6500F1E1C5 /* Main.storyboard */,
+				052521571CB5AA6500F1E1C5 /* PlayerView.h */,
+				052521581CB5AA6500F1E1C5 /* PlayerView.m */,
+				052521591CB5AA6500F1E1C5 /* WelcomeVC.h */,
+				0525215A1CB5AA6500F1E1C5 /* WelcomeVC.m */,
 				FC12445F1CB336CC00594E0D /* Assets.xcassets */,
 				FC1244611CB336CC00594E0D /* LaunchScreen.storyboard */,
 				FC1244641CB336CC00594E0D /* Info.plist */,
@@ -155,9 +168,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0525215B1CB5AA6500F1E1C5 /* Cat_Video.mp4 in Resources */,
 				FC1244631CB336CC00594E0D /* LaunchScreen.storyboard in Resources */,
 				FC1244601CB336CC00594E0D /* Assets.xcassets in Resources */,
-				FC12445B1CB336CC00594E0D /* Main.storyboard in Resources */,
+				0525215C1CB5AA6500F1E1C5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,21 +188,15 @@
 				05D280CD1CB33C65000F16C5 /* Top10CVC.m in Sources */,
 				05D280D01CB33CEA000F16C5 /* Show.m in Sources */,
 				FC1244521CB336CC00594E0D /* main.m in Sources */,
+				0525215E1CB5AA6500F1E1C5 /* WelcomeVC.m in Sources */,
 				05D280D31CB33D3E000F16C5 /* Top10CVCell.m in Sources */,
+				0525215D1CB5AA6500F1E1C5 /* PlayerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FC1244591CB336CC00594E0D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FC12445A1CB336CC00594E0D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FC1244611CB336CC00594E0D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
