@@ -67,7 +67,7 @@
                                     <constraint firstAttribute="height" constant="81" id="sIf-Cn-NRw"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="uTt-60-G1e"/>
                                 </constraints>
-                                <state key="normal" image="start_button"/>
+                                <state key="normal" image="start_button_0005_Layer-2"/>
                                 <connections>
                                     <action selector="startButtonTapped:" destination="hyi-6d-IR3" eventType="touchUpInside" id="hpd-D4-uUK"/>
                                 </connections>
@@ -214,7 +214,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="45O-sU-reg">
                                 <rect key="frame" x="281" y="598" width="69" height="61"/>
-                                <state key="normal" image="notifications_icon_red_0009_Layer-12"/>
+                                <state key="normal" image="notification_button"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b36-cn-jPf">
                                 <rect key="frame" x="147" y="589" width="81" height="79"/>
@@ -254,11 +254,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="home_icon" width="67" height="73"/>
-        <image name="notifications_icon_red_0009_Layer-12" width="69" height="61"/>
+        <image name="home_icon" width="134" height="146"/>
+        <image name="notification_button" width="138" height="122"/>
         <image name="shows-title" width="232" height="50"/>
-        <image name="star_icon_0009_star" width="63" height="62"/>
-        <image name="start_button" width="76" height="81"/>
+        <image name="star_icon_0009_star" width="126" height="125"/>
+        <image name="start_button_0005_Layer-2" width="152" height="162"/>
         <image name="top_10_label_3" width="157" height="48"/>
     </resources>
     <color key="tintColor" red="1" green="0.20403913279999999" blue="0.14000993210000001" alpha="1" colorSpace="calibratedRGB"/>

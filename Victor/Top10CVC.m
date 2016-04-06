@@ -21,8 +21,8 @@ static NSString * const reuseIdentifier = @"Cell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    Show *show1 = [[Show alloc]initWithImage: [UIImage imageNamed:@"DD"]];
-    Show *show2 = [[Show alloc]initWithImage: [UIImage imageNamed:@"GOT"]];
+    Show *show1 = [[Show alloc]initWithImage: [UIImage imageNamed:@"Daredevil"]];
+    Show *show2 = [[Show alloc]initWithImage: [UIImage imageNamed:@"Game_Of_Thrones"]];
     Show *show3 = [[Show alloc]initWithImage: [UIImage imageNamed:@"The_Flash"]];
     Show *show4 = [[Show alloc]initWithImage: [UIImage imageNamed:@"The_Walking_Dead"]];
     Show *show5 = [[Show alloc]initWithImage: [UIImage imageNamed:@"Arrow3"]];
