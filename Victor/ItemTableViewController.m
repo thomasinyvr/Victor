@@ -8,6 +8,7 @@
 
 #import "ItemTableViewController.h"
 #import "Item.h"
+#import "CategoriesTVCell.h"
 
 @interface ItemTableViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -81,12 +82,11 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    CategoriesTVCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
     Item *item = self.items[indexPath.row];
     
-    cell.textLabel.text = item.itemName;
-    cell.detailTextLabel.text = item.itemCategoryNumber;
+    cell.categoryLabel.text = item.itemName;
     
     return cell;
     

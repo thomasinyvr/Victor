@@ -20,6 +20,10 @@
 @end
 
 @implementation CategoriesVC
+- (IBAction)testButtonCode:(UIButton *)sender {
+    
+    [self performSegueWithIdentifier:@"showItemTableView" sender:self];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

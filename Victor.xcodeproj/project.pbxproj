@@ -25,6 +25,7 @@
 		FC1244631CB336CC00594E0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC1244611CB336CC00594E0D /* LaunchScreen.storyboard */; };
 		FCCE51A91CB5ED7B00735124 /* ItemTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCE51A81CB5ED7B00735124 /* ItemTableViewController.m */; };
 		FCCE51AC1CB5F01D00735124 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCE51AB1CB5F01D00735124 /* Item.m */; };
+		FCCE51AF1CB60C2900735124 /* ItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCE51AE1CB60C2900735124 /* ItemTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,8 @@
 		FCCE51A81CB5ED7B00735124 /* ItemTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemTableViewController.m; sourceTree = "<group>"; };
 		FCCE51AA1CB5F01D00735124 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
 		FCCE51AB1CB5F01D00735124 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
+		FCCE51AD1CB60C2900735124 /* ItemTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemTableViewCell.h; sourceTree = "<group>"; };
+		FCCE51AE1CB60C2900735124 /* ItemTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +137,8 @@
 				052521631CB5AC7E00F1E1C5 /* WelcomeVC.m */,
 				FCCE51A71CB5ED7B00735124 /* ItemTableViewController.h */,
 				FCCE51A81CB5ED7B00735124 /* ItemTableViewController.m */,
+				FCCE51AD1CB60C2900735124 /* ItemTableViewCell.h */,
+				FCCE51AE1CB60C2900735124 /* ItemTableViewCell.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -235,6 +240,7 @@
 				0525216A1CB5C0A400F1E1C5 /* CategoriesVC.m in Sources */,
 				052521641CB5AC7E00F1E1C5 /* WelcomeVC.m in Sources */,
 				05D280D31CB33D3E000F16C5 /* Top10CVCell.m in Sources */,
+				FCCE51AF1CB60C2900735124 /* ItemTableViewCell.m in Sources */,
 				FCCE51AC1CB5F01D00735124 /* Item.m in Sources */,
 				0525215D1CB5AA6500F1E1C5 /* PlayerView.m in Sources */,
 			);
