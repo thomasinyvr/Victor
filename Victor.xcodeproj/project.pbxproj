@@ -12,6 +12,9 @@
 		052521621CB5AC6E00F1E1C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 052521611CB5AC6E00F1E1C5 /* Main.storyboard */; };
 		052521641CB5AC7E00F1E1C5 /* WelcomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 052521631CB5AC7E00F1E1C5 /* WelcomeVC.m */; };
 		052521671CB5AC9C00F1E1C5 /* Top10CVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 052521661CB5AC9C00F1E1C5 /* Top10CVC.m */; };
+		0525216A1CB5C0A400F1E1C5 /* CategoriesVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 052521691CB5C0A400F1E1C5 /* CategoriesVC.m */; };
+		0525216D1CB5C10C00F1E1C5 /* CategoriesTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0525216C1CB5C10C00F1E1C5 /* CategoriesTVCell.m */; };
+		052521701CB5C27300F1E1C5 /* Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 0525216F1CB5C27300F1E1C5 /* Category.m */; };
 		05D280D01CB33CEA000F16C5 /* Show.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D280CF1CB33CEA000F16C5 /* Show.m */; };
 		05D280D31CB33D3E000F16C5 /* Top10CVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D280D21CB33D3E000F16C5 /* Top10CVCell.m */; };
 		05D280D61CB33DB3000F16C5 /* HeaderCRView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D280D51CB33DB3000F16C5 /* HeaderCRView.m */; };
@@ -30,6 +33,12 @@
 		052521631CB5AC7E00F1E1C5 /* WelcomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeVC.m; sourceTree = "<group>"; };
 		052521651CB5AC8F00F1E1C5 /* WelcomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WelcomeVC.h; sourceTree = "<group>"; };
 		052521661CB5AC9C00F1E1C5 /* Top10CVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Top10CVC.m; sourceTree = "<group>"; };
+		052521681CB5C0A300F1E1C5 /* CategoriesVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoriesVC.h; sourceTree = "<group>"; };
+		052521691CB5C0A400F1E1C5 /* CategoriesVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoriesVC.m; sourceTree = "<group>"; };
+		0525216B1CB5C10C00F1E1C5 /* CategoriesTVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CategoriesTVCell.h; path = ../CategoriesTVCell.h; sourceTree = "<group>"; };
+		0525216C1CB5C10C00F1E1C5 /* CategoriesTVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CategoriesTVCell.m; path = ../CategoriesTVCell.m; sourceTree = "<group>"; };
+		0525216E1CB5C27300F1E1C5 /* Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Category.h; path = ../Category.h; sourceTree = "<group>"; };
+		0525216F1CB5C27300F1E1C5 /* Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Category.m; path = ../Category.m; sourceTree = "<group>"; };
 		05D280CB1CB33C65000F16C5 /* Top10CVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Top10CVC.h; path = ../Top10CVC.h; sourceTree = "<group>"; };
 		05D280CE1CB33CEA000F16C5 /* Show.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Show.h; sourceTree = "<group>"; };
 		05D280CF1CB33CEA000F16C5 /* Show.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Show.m; sourceTree = "<group>"; };
@@ -77,16 +86,22 @@
 		FC12444F1CB336CC00594E0D /* Victor */ = {
 			isa = PBXGroup;
 			children = (
+				052521681CB5C0A300F1E1C5 /* CategoriesVC.h */,
+				052521691CB5C0A400F1E1C5 /* CategoriesVC.m */,
+				0525216B1CB5C10C00F1E1C5 /* CategoriesTVCell.h */,
+				0525216C1CB5C10C00F1E1C5 /* CategoriesTVCell.m */,
+				0525216E1CB5C27300F1E1C5 /* Category.h */,
+				0525216F1CB5C27300F1E1C5 /* Category.m */,
 				05D280CB1CB33C65000F16C5 /* Top10CVC.h */,
 				052521661CB5AC9C00F1E1C5 /* Top10CVC.m */,
 				05D280D11CB33D3E000F16C5 /* Top10CVCell.h */,
 				05D280D21CB33D3E000F16C5 /* Top10CVCell.m */,
+				05D280CE1CB33CEA000F16C5 /* Show.h */,
+				05D280CF1CB33CEA000F16C5 /* Show.m */,
 				FC1244531CB336CC00594E0D /* AppDelegate.h */,
 				FC1244541CB336CC00594E0D /* AppDelegate.m */,
 				05D280D41CB33DB3000F16C5 /* HeaderCRView.h */,
 				05D280D51CB33DB3000F16C5 /* HeaderCRView.m */,
-				05D280CE1CB33CEA000F16C5 /* Show.h */,
-				05D280CF1CB33CEA000F16C5 /* Show.m */,
 				052521551CB5AA6500F1E1C5 /* Cat_Video.mp4 */,
 				052521571CB5AA6500F1E1C5 /* PlayerView.h */,
 				052521581CB5AA6500F1E1C5 /* PlayerView.m */,
@@ -187,7 +202,10 @@
 				FC12445E1CB336CC00594E0D /* Victor.xcdatamodeld in Sources */,
 				052521671CB5AC9C00F1E1C5 /* Top10CVC.m in Sources */,
 				05D280D01CB33CEA000F16C5 /* Show.m in Sources */,
+				0525216D1CB5C10C00F1E1C5 /* CategoriesTVCell.m in Sources */,
 				FC1244521CB336CC00594E0D /* main.m in Sources */,
+				052521701CB5C27300F1E1C5 /* Category.m in Sources */,
+				0525216A1CB5C0A400F1E1C5 /* CategoriesVC.m in Sources */,
 				052521641CB5AC7E00F1E1C5 /* WelcomeVC.m in Sources */,
 				05D280D31CB33D3E000F16C5 /* Top10CVCell.m in Sources */,
 				0525215D1CB5AA6500F1E1C5 /* PlayerView.m in Sources */,
