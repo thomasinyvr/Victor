@@ -431,19 +431,10 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Pq-v9-71s" userLabel="itemCurrentPriceLabel">
-                                <rect key="frame" x="171" y="494" width="131" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Pq-v9-71s" userLabel="itemCurrentPriceLabel">
+                                <rect key="frame" x="58" y="494" width="131" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="131" id="1oJ-dj-Ied"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="currency" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Gs-js-26I" userLabel="itemCurrencyLabel">
-                                <rect key="frame" x="350" y="494" width="71" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="71" id="xlX-j2-10q"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -461,6 +452,15 @@
                                     <action selector="safariButtonPressed:" destination="Dnn-DN-UqN" eventType="touchUpInside" id="y1V-ub-aFR"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="currency" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Gs-js-26I" userLabel="itemCurrencyLabel">
+                                <rect key="frame" x="247" y="494" width="71" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="71" id="xlX-j2-10q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -477,12 +477,12 @@
                             <constraint firstItem="3DJ-sS-Tyb" firstAttribute="top" secondItem="Dl2-f6-Mf6" secondAttribute="bottom" constant="17" id="aJ3-it-f4k"/>
                             <constraint firstItem="bcf-2Y-fJf" firstAttribute="top" secondItem="NgP-Li-bub" secondAttribute="bottom" constant="31" id="gam-Co-hob"/>
                             <constraint firstItem="Dl2-f6-Mf6" firstAttribute="leading" secondItem="fG5-1n-oto" secondAttribute="leadingMargin" id="hTz-lA-7JB"/>
-                            <constraint firstItem="9Pq-v9-71s" firstAttribute="leading" secondItem="fG5-1n-oto" secondAttribute="leadingMargin" constant="155" id="jPi-nj-2sE"/>
+                            <constraint firstItem="9Pq-v9-71s" firstAttribute="leading" secondItem="fG5-1n-oto" secondAttribute="leadingMargin" constant="42" id="jPi-nj-2sE"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Dl2-f6-Mf6" secondAttribute="trailing" id="kJP-Ur-JBb"/>
                             <constraint firstItem="9Pq-v9-71s" firstAttribute="top" secondItem="3DJ-sS-Tyb" secondAttribute="bottom" constant="30" id="nNH-sM-wLC"/>
                             <constraint firstItem="1Gs-js-26I" firstAttribute="top" secondItem="3DJ-sS-Tyb" secondAttribute="bottom" constant="30" id="rbH-Tc-0cT"/>
                             <constraint firstItem="NgP-Li-bub" firstAttribute="top" secondItem="FGE-D3-q5c" secondAttribute="bottom" constant="33" id="xWA-ae-5bQ"/>
-                            <constraint firstItem="1Gs-js-26I" firstAttribute="leading" secondItem="9Pq-v9-71s" secondAttribute="trailing" constant="48" id="z98-pa-Nve"/>
+                            <constraint firstItem="1Gs-js-26I" firstAttribute="leading" secondItem="9Pq-v9-71s" secondAttribute="trailing" constant="54" id="z98-pa-Nve"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -494,7 +494,7 @@
                     <connections>
                         <outlet property="itemCategoryLabel" destination="3DJ-sS-Tyb" id="1HX-yN-zRg"/>
                         <outlet property="itemCurrencyLabel" destination="1Gs-js-26I" id="OSD-ux-OBd"/>
-                        <outlet property="itemCurrentPriceLabel" destination="1Gs-js-26I" id="2hs-XI-oIo"/>
+                        <outlet property="itemCurrentPriceLabel" destination="9Pq-v9-71s" id="99c-v8-AC3"/>
                         <outlet property="itemNameLabel" destination="bcf-2Y-fJf" id="cqo-ee-d4R"/>
                         <outlet property="itemSubtitleLabel" destination="Dl2-f6-Mf6" id="HvM-sA-568"/>
                     </connections>
