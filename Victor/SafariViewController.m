@@ -19,7 +19,7 @@
 @property (nonatomic,weak) NSString *nameString;
 @property (nonatomic,weak) NSString *subtitleString;
 @property (nonatomic,weak) NSString *categoryString;
-@property (nonatomic,weak) NSString *
+//@property (nonatomic,weak) NSString *
 
 @end
 
