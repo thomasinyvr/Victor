@@ -25,15 +25,15 @@ static NSString * const reuseIdentifier = @"Cell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    Show *show1 = [[Show alloc]initWithImage: [UIImage imageNamed:@"Daredevil"]];
-    Show *show2 = [[Show alloc]initWithImage: [UIImage imageNamed:@"Game_Of_Thrones"]];
-    Show *show3 = [[Show alloc]initWithImage: [UIImage imageNamed:@"The_Flash"]];
-    Show *show4 = [[Show alloc]initWithImage: [UIImage imageNamed:@"The_Walking_Dead"]];
-    Show *show5 = [[Show alloc]initWithImage: [UIImage imageNamed:@"Arrow3"]];
-    Show *show6 = [[Show alloc]initWithImage: [UIImage imageNamed:@"Vikings"]];
-    Show *show7 = [[Show alloc]initWithImage: [UIImage imageNamed:@"The_100_1"]];
-    Show *show8 = [[Show alloc]initWithImage: [UIImage imageNamed:@"PLL_01"]];
-    Show *show9 = [[Show alloc]initWithImage: [UIImage imageNamed:@"Gotham1"]];
+    Show *show1 = [[Show alloc]initWithImage: [UIImage imageNamed:@"Daredevil"]andName:@"Daredevil"];
+    Show *show2 = [[Show alloc]initWithImage: [UIImage imageNamed:@"Game_Of_Thrones"]andName:@"Game of Thrones"];
+    Show *show3 = [[Show alloc]initWithImage: [UIImage imageNamed:@"The_Flash"]andName:@"The Flash"];
+    Show *show4 = [[Show alloc]initWithImage: [UIImage imageNamed:@"The_Walking_Dead"]andName:@"The Walking Dead"];
+    Show *show5 = [[Show alloc]initWithImage: [UIImage imageNamed:@"Arrow3"]andName:@"Arrow"];
+    Show *show6 = [[Show alloc]initWithImage: [UIImage imageNamed:@"Vikings"]andName:@"Vikings"];
+    Show *show7 = [[Show alloc]initWithImage: [UIImage imageNamed:@"The_100_1"]andName:@"The 100"];
+    Show *show8 = [[Show alloc]initWithImage: [UIImage imageNamed:@"PLL_01"]andName:@"Walking Dead"];
+    Show *show9 = [[Show alloc]initWithImage: [UIImage imageNamed:@"Gotham1"]andName:@"Gotham"];
     
     
     //    [shows addObject:show1];
@@ -68,24 +68,10 @@ static NSString * const reuseIdentifier = @"Cell";
     
     return cell;
     
-    
-    
 }
-
-
-
 
 #pragma mark <UICollectionViewDelegate>
 
-
-
-//
-//- (BOOL)collectionView:(UICollectionView *)collectionView shouldHighlightItemAtIndexPath:(NSIndexPath *)indexPath {
-//	return YES;
-//}
-
-
-//
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView
            viewForSupplementaryElementOfKind:(NSString *)kind
                                  atIndexPath:(NSIndexPath *)indexPath {
@@ -102,35 +88,20 @@ static NSString * const reuseIdentifier = @"Cell";
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    CategoriesVC *categoriesVC = segue.destinationViewController;
     
-//    CategoriesVC.category = self.selectedShow;
+    if ([segue.identifier isEqualToString:@"showCategories"]){
+        
+        CategoriesVC *categoriesVC = segue.destinationViewController;
+        categoriesVC.show = self.selectedShow;
+        
+    }
+    
+    //CategoriesVC *categoriesVC = segue.destinationViewController;
+    
 }
 
         
 
 
-
-/*
- // Uncomment this method to specify if the specified item should be selected
- - (BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath {
- return YES;
- }
- */
-
-/*
- // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
- - (BOOL)collectionView:(UICollectionView *)collectionView shouldShowMenuForItemAtIndexPath:(NSIndexPath *)indexPath {
-	return NO;
- }
- 
- - (BOOL)collectionView:(UICollectionView *)collectionView canPerformAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
-	return NO;
- }
- 
- - (void)collectionView:(UICollectionView *)collectionView performAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
-	
- }
- */
 
 @end

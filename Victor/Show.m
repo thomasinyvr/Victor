@@ -10,11 +10,12 @@
 
 @implementation Show
 
-- (instancetype)initWithImage:(UIImage *)image
+- (instancetype)initWithImage:(UIImage *)image andName:(NSString *)showName
 {
     self = [super init];
     if (self) {
         _image = image;
+        _showName = showName;
     }
     return self;
 }

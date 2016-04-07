@@ -12,9 +12,10 @@
 @interface Show : NSObject
 
 @property (nonatomic, strong) UIImage *image;
+@property (nonatomic) NSString *showName;
 
 
-- (instancetype)initWithImage:(UIImage *)image;
+- (instancetype)initWithImage:(UIImage *)image andName:(NSString*)showName;
 
 
 @end
