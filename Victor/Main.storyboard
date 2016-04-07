@@ -470,8 +470,8 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="kJP-Ur-JBb"/>
                                 <exclude reference="hTz-lA-7JB"/>
+                                <exclude reference="kJP-Ur-JBb"/>
                             </mask>
                         </variation>
                     </view>
