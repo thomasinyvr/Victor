@@ -100,6 +100,17 @@
         SafariViewController *safariVC = segue.destinationViewController;
         safariVC.show = self.show;
         
+        //[self.tableView indexPathForSelectedRow];
+        NSIndexPath *pathSelected = [self.tableView indexPathForSelectedRow];
+        
+        
+       // Item *item = [self.items objectAtIndex:pathSelected.row];
+        
+        Item *item = self.items[pathSelected.row];
+
+        safariVC.item = item;
+        
+
     }
     
     

@@ -20,6 +20,7 @@
 @property (nonatomic) NSURL *itemImageUrl;
 @property (nonatomic) NSURL *viewItemUrl;
 
+
 - (instancetype)initWithDictionary:(NSDictionary*)itemDictionary;
 
 
