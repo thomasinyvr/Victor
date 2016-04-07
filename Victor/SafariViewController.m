@@ -7,6 +7,7 @@
 //
 
 #import "SafariViewController.h"
+#import "Item.h"
 
 @interface SafariViewController ()
 
@@ -16,10 +17,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *itemCurrentPriceLabel;
 @property (weak, nonatomic) IBOutlet UILabel *itemCurrencyLabel;
 
-@property (nonatomic,weak) NSString *nameString;
-@property (nonatomic,weak) NSString *subtitleString;
-@property (nonatomic,weak) NSString *categoryString;
-//@property (nonatomic,weak) NSString *
+
 
 @end
 
@@ -29,7 +27,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [self labelsPopulate];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -39,16 +38,20 @@
 
 -(IBAction)safariButtonPressed:(id)sender
 {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.cnn.com"]];
+    [[UIApplication sharedApplication] openURL:self.item.viewItemUrl];
     
 }
 
-//-(void)labelsPopulate {
-//    
-//    self.itemNameLabel.text = [NSString stringWithFormat:@"%@", nameLabelText];
-//    
-//    
-//}
+-(void)labelsPopulate {
+    
+
+    self.itemNameLabel.text = [NSString stringWithFormat:@"%@", self.item.itemName];
+    self.itemSubtitleLabel.text = [NSString stringWithFormat:@"%@", self.item.itemSubtitle];
+    self.itemCategoryLabel.text = [NSString stringWithFormat:@"%@", self.item.itemCategory];
+    self.itemCurrentPriceLabel.text = [NSString stringWithFormat:@"%@", self.item.currentPrice];
+    self.itemCurrencyLabel.text = [NSString stringWithFormat:@"%@", self.item.currentCurrency];
+    
+}
 
 
 @end
