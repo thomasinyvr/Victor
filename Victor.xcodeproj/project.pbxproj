@@ -23,6 +23,8 @@
 		FC12445E1CB336CC00594E0D /* Victor.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC12445C1CB336CC00594E0D /* Victor.xcdatamodeld */; };
 		FC1244601CB336CC00594E0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC12445F1CB336CC00594E0D /* Assets.xcassets */; };
 		FC1244631CB336CC00594E0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC1244611CB336CC00594E0D /* LaunchScreen.storyboard */; };
+		FCCE51A91CB5ED7B00735124 /* ItemTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCE51A81CB5ED7B00735124 /* ItemTableViewController.m */; };
+		FCCE51AC1CB5F01D00735124 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCE51AB1CB5F01D00735124 /* Item.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,10 @@
 		FC12445F1CB336CC00594E0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC1244621CB336CC00594E0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC1244641CB336CC00594E0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCCE51A71CB5ED7B00735124 /* ItemTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemTableViewController.h; sourceTree = "<group>"; };
+		FCCE51A81CB5ED7B00735124 /* ItemTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemTableViewController.m; sourceTree = "<group>"; };
+		FCCE51AA1CB5F01D00735124 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		FCCE51AB1CB5F01D00735124 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,27 +92,10 @@
 		FC12444F1CB336CC00594E0D /* Victor */ = {
 			isa = PBXGroup;
 			children = (
-				052521681CB5C0A300F1E1C5 /* CategoriesVC.h */,
-				052521691CB5C0A400F1E1C5 /* CategoriesVC.m */,
-				0525216B1CB5C10C00F1E1C5 /* CategoriesTVCell.h */,
-				0525216C1CB5C10C00F1E1C5 /* CategoriesTVCell.m */,
-				0525216E1CB5C27300F1E1C5 /* Category.h */,
-				0525216F1CB5C27300F1E1C5 /* Category.m */,
-				05D280CB1CB33C65000F16C5 /* Top10CVC.h */,
-				052521661CB5AC9C00F1E1C5 /* Top10CVC.m */,
-				05D280D11CB33D3E000F16C5 /* Top10CVCell.h */,
-				05D280D21CB33D3E000F16C5 /* Top10CVCell.m */,
-				05D280CE1CB33CEA000F16C5 /* Show.h */,
-				05D280CF1CB33CEA000F16C5 /* Show.m */,
+				FCCE51A51CB5ECDA00735124 /* Controllers */,
+				FCCE51A61CB5ECF600735124 /* Model */,
 				FC1244531CB336CC00594E0D /* AppDelegate.h */,
 				FC1244541CB336CC00594E0D /* AppDelegate.m */,
-				05D280D41CB33DB3000F16C5 /* HeaderCRView.h */,
-				05D280D51CB33DB3000F16C5 /* HeaderCRView.m */,
-				052521551CB5AA6500F1E1C5 /* Cat_Video.mp4 */,
-				052521571CB5AA6500F1E1C5 /* PlayerView.h */,
-				052521581CB5AA6500F1E1C5 /* PlayerView.m */,
-				052521651CB5AC8F00F1E1C5 /* WelcomeVC.h */,
-				052521631CB5AC7E00F1E1C5 /* WelcomeVC.m */,
 				052521611CB5AC6E00F1E1C5 /* Main.storyboard */,
 				FC12445F1CB336CC00594E0D /* Assets.xcassets */,
 				FC1244611CB336CC00594E0D /* LaunchScreen.storyboard */,
@@ -123,6 +112,43 @@
 				FC1244511CB336CC00594E0D /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FCCE51A51CB5ECDA00735124 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				052521681CB5C0A300F1E1C5 /* CategoriesVC.h */,
+				052521691CB5C0A400F1E1C5 /* CategoriesVC.m */,
+				0525216B1CB5C10C00F1E1C5 /* CategoriesTVCell.h */,
+				0525216C1CB5C10C00F1E1C5 /* CategoriesTVCell.m */,
+				05D280CB1CB33C65000F16C5 /* Top10CVC.h */,
+				052521661CB5AC9C00F1E1C5 /* Top10CVC.m */,
+				05D280D11CB33D3E000F16C5 /* Top10CVCell.h */,
+				05D280D21CB33D3E000F16C5 /* Top10CVCell.m */,
+				05D280D41CB33DB3000F16C5 /* HeaderCRView.h */,
+				05D280D51CB33DB3000F16C5 /* HeaderCRView.m */,
+				052521551CB5AA6500F1E1C5 /* Cat_Video.mp4 */,
+				052521571CB5AA6500F1E1C5 /* PlayerView.h */,
+				052521581CB5AA6500F1E1C5 /* PlayerView.m */,
+				052521651CB5AC8F00F1E1C5 /* WelcomeVC.h */,
+				052521631CB5AC7E00F1E1C5 /* WelcomeVC.m */,
+				FCCE51A71CB5ED7B00735124 /* ItemTableViewController.h */,
+				FCCE51A81CB5ED7B00735124 /* ItemTableViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		FCCE51A61CB5ECF600735124 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0525216E1CB5C27300F1E1C5 /* Category.h */,
+				0525216F1CB5C27300F1E1C5 /* Category.m */,
+				05D280CE1CB33CEA000F16C5 /* Show.h */,
+				05D280CF1CB33CEA000F16C5 /* Show.m */,
+				FCCE51AA1CB5F01D00735124 /* Item.h */,
+				FCCE51AB1CB5F01D00735124 /* Item.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCCE51A91CB5ED7B00735124 /* ItemTableViewController.m in Sources */,
 				FC1244551CB336CC00594E0D /* AppDelegate.m in Sources */,
 				05D280D61CB33DB3000F16C5 /* HeaderCRView.m in Sources */,
 				FC12445E1CB336CC00594E0D /* Victor.xcdatamodeld in Sources */,
@@ -208,6 +235,7 @@
 				0525216A1CB5C0A400F1E1C5 /* CategoriesVC.m in Sources */,
 				052521641CB5AC7E00F1E1C5 /* WelcomeVC.m in Sources */,
 				05D280D31CB33D3E000F16C5 /* Top10CVCell.m in Sources */,
+				FCCE51AC1CB5F01D00735124 /* Item.m in Sources */,
 				0525215D1CB5AA6500F1E1C5 /* PlayerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
