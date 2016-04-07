@@ -16,6 +16,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *itemCategoryLabel;
 @property (weak, nonatomic) IBOutlet UILabel *itemCurrentPriceLabel;
 @property (weak, nonatomic) IBOutlet UILabel *itemCurrencyLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *itemImageView;
 
 
 
@@ -50,8 +51,16 @@
     self.itemCategoryLabel.text = [NSString stringWithFormat:@"%@", self.item.itemCategory];
     self.itemCurrentPriceLabel.text = [NSString stringWithFormat:@"%@", self.item.currentPrice];
     self.itemCurrencyLabel.text = [NSString stringWithFormat:@"%@", self.item.currentCurrency];
+    self.itemImageView.image = self.itemImageUrl;
     
-}
+    
+    NSURL *url = [NSURL URLWithString:itemImageUrl];
 
+    NSURLSessionDownloadTask *downloadPhotoTask = [[NSURLSession sharedSession]downloadTaskWithURL:url completionHandler:^(NSURL *location, NSURLResponse *response, NSError *error) {
+        UIImage *downloadedImage = [UIImage imageWithData:[NSData dataWithContentsOfURL:location]];
+    }];
+    
+    [downloadPhotoTask resume];
+}
 
 @end
