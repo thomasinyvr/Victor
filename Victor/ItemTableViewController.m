@@ -9,6 +9,7 @@
 #import "ItemTableViewController.h"
 #import "Item.h"
 #import "CategoriesTVCell.h"
+#import "SafariViewController.h"
 
 @interface ItemTableViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -91,6 +92,19 @@
     return cell;
     
 }
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    if ([segue.identifier isEqualToString:@"showSafariView"]){
+        
+        SafariViewController *safariVC = segue.destinationViewController;
+        safariVC.show = self.show;
+        
+    }
+    
+    
+}
+
 
 
 @end
