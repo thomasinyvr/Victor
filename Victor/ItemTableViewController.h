@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Show.h"
 
 @interface ItemTableViewController : UIViewController
+
+@property (nonatomic, strong) Show *show;
 
 @end
