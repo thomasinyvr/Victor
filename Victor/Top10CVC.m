@@ -7,10 +7,14 @@
 //
 
 #import "Top10CVC.h"
+#import "CategoriesVC.h"
 
 @interface Top10CVC ()
 
 @property (nonatomic, strong) NSArray *shows;
+
+@property (nonatomic, strong) Show *selectedShow;
+
 
 
 @end
@@ -44,15 +48,6 @@ static NSString * const reuseIdentifier = @"Cell";
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 #pragma mark <UICollectionViewDataSource>
 
@@ -98,6 +93,22 @@ static NSString * const reuseIdentifier = @"Cell";
     header.headerLabel.text = @"Top 10";
     return header;
 }
+
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+    self.selectedShow = self.shows[indexPath.item];
+    [self performSegueWithIdentifier:@"showCategories" sender:self];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    CategoriesVC *categoriesVC = segue.destinationViewController;
+    
+//    CategoriesVC.category = self.selectedShow;
+}
+
+        
+
 
 
 /*

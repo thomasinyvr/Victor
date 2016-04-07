@@ -146,7 +146,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="304" height="124"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JYO-uM-ebL">
+                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JYO-uM-ebL">
                                                     <rect key="frame" x="0.0" y="0.0" width="304" height="124"/>
                                                     <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 </imageView>
@@ -213,11 +213,11 @@
                                 <state key="normal" title="Button" image="home_icon"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="45O-sU-reg">
-                                <rect key="frame" x="281" y="598" width="69" height="61"/>
+                                <rect key="frame" x="283" y="601" width="65" height="58"/>
                                 <state key="normal" image="notification_button"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b36-cn-jPf">
-                                <rect key="frame" x="147" y="589" width="81" height="79"/>
+                                <rect key="frame" x="155" y="595" width="65" height="64"/>
                                 <state key="normal" image="star_icon_0009_star"/>
                             </button>
                         </subviews>
@@ -247,19 +247,81 @@
                     </view>
                     <navigationItem key="navigationItem" id="y1r-wq-O9b"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <segue destination="olM-29-KTW" kind="show" identifier="showCategories" id="Vfb-fs-wuR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ePH-R3-u7z" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="276.5" y="517.5"/>
         </scene>
+        <!--CategoriesVC-->
+        <scene sceneID="FXd-ej-d84">
+            <objects>
+                <viewController id="olM-29-KTW" customClass="CategoriesVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="s5S-3c-5at"/>
+                        <viewControllerLayoutGuide type="bottom" id="naj-wf-7iw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zkm-Dv-KFI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Axd-1S-ABB">
+                                <rect key="frame" x="55" y="154" width="264" height="440"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TVCell" id="dxz-S5-9Kf" customClass="CategoriesTVCell">
+                                        <rect key="frame" x="0.0" y="28" width="264" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dxz-S5-9Kf" id="LoZ-yC-lde">
+                                            <rect key="frame" x="0.0" y="0.0" width="264" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ifV-hZ-R3n">
+                                                    <rect key="frame" x="23" y="11" width="219" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="categoryLabel" destination="ifV-hZ-R3n" id="EFP-77-Cqs"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="olM-29-KTW" id="gRb-M1-zew"/>
+                                    <outlet property="delegate" destination="olM-29-KTW" id="lZH-pK-CPm"/>
+                                </connections>
+                            </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Daredevil_label" translatesAutoresizingMaskIntoConstraints="NO" id="s14-Eg-3KI">
+                                <rect key="frame" x="115" y="20" width="240" height="94"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wdv-aH-5m6">
+                                <rect key="frame" x="20" y="28" width="63" height="63"/>
+                                <state key="normal" image="back_button_NoBG"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nHx-Nd-B0q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="694.5" y="517.5"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="home_icon" width="134" height="146"/>
+        <image name="Daredevil_label" width="361" height="171"/>
+        <image name="back_button_NoBG" width="63" height="63"/>
+        <image name="home_icon" width="67" height="73"/>
         <image name="notification_button" width="138" height="122"/>
         <image name="shows-title" width="232" height="50"/>
         <image name="star_icon_0009_star" width="126" height="125"/>
         <image name="start_button_0005_Layer-2" width="152" height="162"/>
-        <image name="top_10_label_3" width="157" height="48"/>
+        <image name="top_10_label_3" width="78" height="24"/>
     </resources>
     <color key="tintColor" red="1" green="0.20403913279999999" blue="0.14000993210000001" alpha="1" colorSpace="calibratedRGB"/>
 </document>
