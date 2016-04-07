@@ -24,6 +24,28 @@
     
     [self performSegueWithIdentifier:@"showItemTableView" sender:self];
 }
+- (IBAction)showActionFigures:(id)sender {
+    
+    [self performSegueWithIdentifier:@"showItemTableView" sender:@"158671"];
+    
+}
+- (IBAction)showCollectibles:(id)sender {
+    
+    [self performSegueWithIdentifier:@"showItemTableView" sender:@"1424"];
+}
+- (IBAction)showComicBooks:(id)sender {
+    
+    [self performSegueWithIdentifier:@"showItemTableView" sender:@"900"];
+}
+- (IBAction)showDVDBluRay:(id)sender {
+    
+    [self performSegueWithIdentifier:@"showItemTableView" sender:@"617"];
+}
+- (IBAction)showSoundtrack:(id)sender {
+    
+    [self performSegueWithIdentifier:@"showItemTableView" sender:@"176984"];
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -78,6 +100,7 @@
         
         ItemTableViewController *itemsVC = segue.destinationViewController;
         itemsVC.show = self.show;
+        itemsVC.categoryNumber = sender;
         
     }
     

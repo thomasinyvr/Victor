@@ -275,36 +275,51 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Daredevil_label" translatesAutoresizingMaskIntoConstraints="NO" id="s14-Eg-3KI">
                                 <rect key="frame" x="115" y="20" width="240" height="94"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wdv-aH-5m6">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wdv-aH-5m6" userLabel="backButton">
                                 <rect key="frame" x="20" y="28" width="63" height="63"/>
                                 <state key="normal" image="back_button_NoBG"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YJM-w8-sK2">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YJM-w8-sK2" userLabel="collectibles">
                                 <rect key="frame" x="47" y="248" width="280" height="64"/>
                                 <state key="normal" image="collectables_2"/>
+                                <connections>
+                                    <action selector="showCollectibles:" destination="olM-29-KTW" eventType="touchUpInside" id="vm3-ql-9Wb"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I3R-mX-rw7">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I3R-mX-rw7" userLabel="actionFigures">
                                 <rect key="frame" x="47" y="176" width="280" height="64"/>
                                 <state key="normal" image="shirt_final"/>
+                                <connections>
+                                    <action selector="showActionFigures:" destination="olM-29-KTW" eventType="touchUpInside" id="rw4-oL-uzm"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Yh-wm-kxY">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Yh-wm-kxY" userLabel="comicBooks">
                                 <rect key="frame" x="47" y="320" width="280" height="64"/>
                                 <state key="normal" image="comic_books"/>
+                                <connections>
+                                    <action selector="showComicBooks:" destination="olM-29-KTW" eventType="touchUpInside" id="is5-AL-3FY"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7X5-ky-Mmr">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7X5-ky-Mmr" userLabel="dvdBluRay">
                                 <rect key="frame" x="47" y="391" width="280" height="64"/>
                                 <state key="normal" image="dvd_00"/>
+                                <connections>
+                                    <action selector="showDVDBluRay:" destination="olM-29-KTW" eventType="touchUpInside" id="G9e-8s-Xa6"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Fe-VK-8cq">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Fe-VK-8cq" userLabel="soundtrack">
                                 <rect key="frame" x="47" y="463" width="280" height="64"/>
                                 <state key="normal" image="soundtrack_0"/>
+                                <connections>
+                                    <action selector="showSoundtrack:" destination="olM-29-KTW" eventType="touchUpInside" id="fKs-RM-jcG"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <segue destination="RU3-SI-8hC" kind="show" identifier="showItemTableView" id="JSp-sZ-tpG"/>
+                        <segue destination="RU3-SI-8hC" kind="show" identifier="showItemTableView" id="qkc-87-52G"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nHx-Nd-B0q" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -348,7 +363,8 @@
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <outlet property="categoryLabel" destination="bpu-D2-xU9" id="MpG-vu-2dJ"/>
+                                            <outlet property="categoryLabel" destination="bpu-D2-xU9" id="bci-MG-JVS"/>
+                                            <segue destination="Dnn-DN-UqN" kind="show" identifier="showSafariView" id="Mwr-wu-CNE"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -385,11 +401,11 @@
                         <viewControllerLayoutGuide type="bottom" id="luq-ug-YOy"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="fG5-1n-oto">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NgP-Li-bub">
-                                <rect key="frame" x="175" y="53" width="250" height="250"/>
+                                <rect key="frame" x="62" y="53" width="250" height="250"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="250" id="754-yE-sfT"/>
@@ -397,26 +413,26 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcf-2Y-fJf" userLabel="itemNameLabel">
-                                <rect key="frame" x="20" y="334" width="560" height="21"/>
+                                <rect key="frame" x="16" y="334" width="343" height="21"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="subtitle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dl2-f6-Mf6" userLabel="itemSubtitleLabel">
-                                <rect key="frame" x="20" y="405" width="560" height="21"/>
+                                <rect key="frame" x="16" y="405" width="343" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="category" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3DJ-sS-Tyb" userLabel="itemCategoryLabel">
-                                <rect key="frame" x="20" y="443" width="560" height="21"/>
+                                <rect key="frame" x="16" y="443" width="343" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Pq-v9-71s" userLabel="itemCurrentPriceLabel">
-                                <rect key="frame" x="175" y="494" width="131" height="21"/>
+                                <rect key="frame" x="171" y="494" width="131" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="131" id="1oJ-dj-Ied"/>
                                 </constraints>
@@ -425,7 +441,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="currency" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Gs-js-26I" userLabel="itemCurrencyLabel">
-                                <rect key="frame" x="354" y="494" width="71" height="21"/>
+                                <rect key="frame" x="350" y="494" width="71" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="71" id="xlX-j2-10q"/>
                                 </constraints>
@@ -434,7 +450,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cLN-ag-hMX" userLabel="safariButton">
-                                <rect key="frame" x="247" y="523" width="107" height="30"/>
+                                <rect key="frame" x="134" y="523" width="107" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="107" id="qrv-bG-oiT"/>
                                 </constraints>
