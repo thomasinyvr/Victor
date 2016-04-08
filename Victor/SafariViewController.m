@@ -60,4 +60,15 @@
     
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    if ([segue.identifier isEqualToString:@"showItemTableView"]){
+        
+        ItemTableViewController *itemsVC = segue.destinationViewController;
+        itemsVC.show = self.show;
+        itemsVC.categoryNumber = sender;
+        
+    }
+
+
 @end
