@@ -19,7 +19,7 @@
     
     
     // Get the url to your video
-    NSURL *videoURL = [[NSBundle mainBundle] URLForResource:@"victor_intro" withExtension:@"mov"];
+    NSURL *videoURL = [[NSBundle mainBundle] URLForResource:@"shows_preview0" withExtension:@"mov"];
     
     // Create a new player view controller with a player object
     AVPlayer *player = [AVPlayer playerWithURL:videoURL];
@@ -44,7 +44,24 @@
     [videoView.bottomAnchor constraintEqualToAnchor:self.blankVideoView.bottomAnchor].active = YES;
     
     [player play];
+    
+    // Tell the player to do nothing when it stops playing
+    player.actionAtItemEnd = AVPlayerActionAtItemEndNone;
+    
+    // Listen for a notification when the player ends playing
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playerItemDidReachEnd:) name:AVPlayerItemDidPlayToEndTimeNotification object:[player currentItem]];
 }
+
+
+- (void)playerItemDidReachEnd:(NSNotification *)notification {
+    // Get the player item from the notification and seek to the begining
+    AVPlayerItem *playerItem = [notification object];
+    [playerItem seekToTime:kCMTimeZero];
+}
+
+
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
