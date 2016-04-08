@@ -19,7 +19,7 @@
     
     
     // Get the url to your video
-    NSURL *videoURL = [[NSBundle mainBundle] URLForResource:@"Cat_Video" withExtension:@"mp4"];
+    NSURL *videoURL = [[NSBundle mainBundle] URLForResource:@"victor_intro" withExtension:@"mov"];
     
     // Create a new player view controller with a player object
     AVPlayer *player = [AVPlayer playerWithURL:videoURL];
