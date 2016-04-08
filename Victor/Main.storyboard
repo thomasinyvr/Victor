@@ -512,9 +512,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Pq-v9-71s" userLabel="itemCurrentPriceLabel">
-                                <rect key="frame" x="103" y="449" width="67" height="26"/>
+                                <rect key="frame" x="90" y="449" width="99" height="26"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="67" id="rat-Qo-X14"/>
+                                    <constraint firstAttribute="width" constant="99" id="rat-Qo-X14"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="TimeBurner-Bold" family="TimeBurner" pointSize="20"/>
                                 <color key="textColor" red="0.84313725490196079" green="0.84313725490196079" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
@@ -554,7 +554,7 @@
                             <constraint firstItem="bcf-2Y-fJf" firstAttribute="top" secondItem="5Rv-9N-bT7" secondAttribute="bottom" constant="3" id="Kpi-f8-94B"/>
                             <constraint firstAttribute="trailingMargin" secondItem="1Gs-js-26I" secondAttribute="trailing" constant="50" id="SON-Ew-2pM"/>
                             <constraint firstItem="bcf-2Y-fJf" firstAttribute="trailing" secondItem="fG5-1n-oto" secondAttribute="trailingMargin" id="Thb-h7-qOa"/>
-                            <constraint firstItem="9Pq-v9-71s" firstAttribute="leading" secondItem="fG5-1n-oto" secondAttribute="leading" constant="103" id="WPz-U1-fBc"/>
+                            <constraint firstItem="9Pq-v9-71s" firstAttribute="leading" secondItem="fG5-1n-oto" secondAttribute="leading" constant="90" id="WPz-U1-fBc"/>
                             <constraint firstItem="9Pq-v9-71s" firstAttribute="baseline" secondItem="1Gs-js-26I" secondAttribute="firstBaseline" id="WeF-uy-onr"/>
                             <constraint firstItem="pb1-wm-wdn" firstAttribute="top" secondItem="1Gs-js-26I" secondAttribute="bottom" constant="62" id="ZmV-1I-eK7"/>
                             <constraint firstItem="o7W-Cb-4kO" firstAttribute="bottom" secondItem="luq-ug-YOy" secondAttribute="top" id="a9v-5n-xJh"/>
