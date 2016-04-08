@@ -17,6 +17,7 @@
 		052521701CB5C27300F1E1C5 /* Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 0525216F1CB5C27300F1E1C5 /* Category.m */; };
 		05B64B611CB6F0650079E7CE /* timeburnerbold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 05B64B5F1CB6F0650079E7CE /* timeburnerbold.ttf */; };
 		05B64B621CB6F0650079E7CE /* timeburnernormal.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 05B64B601CB6F0650079E7CE /* timeburnernormal.ttf */; };
+		05B64B641CB717EE0079E7CE /* victor_intro.mov in Resources */ = {isa = PBXBuildFile; fileRef = 05B64B631CB717EE0079E7CE /* victor_intro.mov */; };
 		05D280D01CB33CEA000F16C5 /* Show.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D280CF1CB33CEA000F16C5 /* Show.m */; };
 		05D280D31CB33D3E000F16C5 /* Top10CVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D280D21CB33D3E000F16C5 /* Top10CVCell.m */; };
 		05D280D61CB33DB3000F16C5 /* HeaderCRView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D280D51CB33DB3000F16C5 /* HeaderCRView.m */; };
@@ -48,6 +49,7 @@
 		0525216F1CB5C27300F1E1C5 /* Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Category.m; path = ../Category.m; sourceTree = "<group>"; };
 		05B64B5F1CB6F0650079E7CE /* timeburnerbold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = timeburnerbold.ttf; sourceTree = "<group>"; };
 		05B64B601CB6F0650079E7CE /* timeburnernormal.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = timeburnernormal.ttf; sourceTree = "<group>"; };
+		05B64B631CB717EE0079E7CE /* victor_intro.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = victor_intro.mov; sourceTree = "<group>"; };
 		05D280CB1CB33C65000F16C5 /* Top10CVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Top10CVC.h; path = ../Top10CVC.h; sourceTree = "<group>"; };
 		05D280CE1CB33CEA000F16C5 /* Show.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Show.h; sourceTree = "<group>"; };
 		05D280CF1CB33CEA000F16C5 /* Show.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Show.m; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				FCCE51AE1CB60C2900735124 /* ItemTableViewCell.m */,
 				FCCE51B01CB629DF00735124 /* SafariViewController.h */,
 				FCCE51B11CB629DF00735124 /* SafariViewController.m */,
+				05B64B631CB717EE0079E7CE /* victor_intro.mov */,
 				052521551CB5AA6500F1E1C5 /* Cat_Video.mp4 */,
 			);
 			name = Controllers;
@@ -235,6 +238,7 @@
 				FC1244631CB336CC00594E0D /* LaunchScreen.storyboard in Resources */,
 				FC1244601CB336CC00594E0D /* Assets.xcassets in Resources */,
 				052521621CB5AC6E00F1E1C5 /* Main.storyboard in Resources */,
+				05B64B641CB717EE0079E7CE /* victor_intro.mov in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
