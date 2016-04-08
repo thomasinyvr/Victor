@@ -15,6 +15,8 @@
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic) NSMutableArray *items;
+@property (weak, nonatomic) IBOutlet UIImageView *Arrow3;
+
 
 
 @end
@@ -88,6 +90,11 @@
     Item *item = self.items[indexPath.row];
     
     cell.categoryLabel.text = item.itemName;
+    
+    UIImage *downloadedImage = [UIImage imageWithData:[NSData dataWithContentsOfURL:self.item.itemImageUrl]];
+    
+    self.Arrow3.image = downloadedImage;
+
     
     return cell;
     
