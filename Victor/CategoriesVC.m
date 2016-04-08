@@ -76,9 +76,8 @@
     
     cell.categoryLabel.text = category.title;
     
-    UIImage *downloadedImage = [UIImage imageWithData:[NSData dataWithContentsOfURL:self.item.itemImageUrl]];
+    //UIImage *downloadedImage = [UIImage imageWithData:[NSData dataWithContentsOfURL:self.item.itemImageUrl]];
     
-    self.Arrow3.image = downloadedImage;
     
     return cell;
     
