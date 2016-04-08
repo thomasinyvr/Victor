@@ -495,6 +495,7 @@
                         <outlet property="itemCategoryLabel" destination="3DJ-sS-Tyb" id="1HX-yN-zRg"/>
                         <outlet property="itemCurrencyLabel" destination="1Gs-js-26I" id="OSD-ux-OBd"/>
                         <outlet property="itemCurrentPriceLabel" destination="9Pq-v9-71s" id="99c-v8-AC3"/>
+                        <outlet property="itemImageView" destination="NgP-Li-bub" id="7LB-Ic-Gbw"/>
                         <outlet property="itemNameLabel" destination="bcf-2Y-fJf" id="cqo-ee-d4R"/>
                         <outlet property="itemSubtitleLabel" destination="Dl2-f6-Mf6" id="HvM-sA-568"/>
                     </connections>

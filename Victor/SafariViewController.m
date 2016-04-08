@@ -51,16 +51,27 @@
     self.itemCategoryLabel.text = [NSString stringWithFormat:@"%@", self.item.itemCategory];
     self.itemCurrentPriceLabel.text = [NSString stringWithFormat:@"%@", self.item.currentPrice];
     self.itemCurrencyLabel.text = [NSString stringWithFormat:@"%@", self.item.currentCurrency];
-    self.itemImageView.image = self.itemImageUrl;
     
+    NSLog(@"%@", self.item.itemImageUrl);
     
-    NSURL *url = [NSURL URLWithString:itemImageUrl];
-
-    NSURLSessionDownloadTask *downloadPhotoTask = [[NSURLSession sharedSession]downloadTaskWithURL:url completionHandler:^(NSURL *location, NSURLResponse *response, NSError *error) {
-        UIImage *downloadedImage = [UIImage imageWithData:[NSData dataWithContentsOfURL:location]];
-    }];
+    UIImage *downloadedImage = [UIImage imageWithData:[NSData dataWithContentsOfURL:self.item.itemImageUrl]];
     
-    [downloadPhotoTask resume];
+    self.itemImageView.image = downloadedImage;
+    
+//    NSURLSessionDataTask *downloadPhotoTask = [[NSURLSession sharedSession] dataTaskWithURL:self.item.itemImageUrl completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+//        if (error != nil)
+//                                                                   {
+//                                                                       UIImage *downloadedImage = [UIImage imageWithData:data];
+//                                                                       self.itemImageView.image = downloadedImage;
+//                                                                      [self.itemImageView setNeedsLayout];
+//                                                                      [self.itemImageView setNeedsDisplay];
+//                                                                   } else {
+//                                                                       NSLog(@"eror is %@", error.localizedDescription);
+//                                                                   }
+//
+//    }];
+//     [downloadPhotoTask resume];
+    
 }
 
 @end
