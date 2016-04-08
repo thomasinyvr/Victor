@@ -27,7 +27,7 @@
     NSMutableArray *items = [NSMutableArray array];
     self.items = items;
     
-    NSString *url = [NSString stringWithFormat:@"http://svcs.ebay.com/services/search/FindingService/v1?OPERATION-NAME=findItemsAdvanced&SERVICE-VERSION=1.0.0&SECURITY-APPNAME=ThomasFr-Victor-PRD-e3890c490-94272c2c&RESPONSE-DATA-FORMAT=JSON&REST-PAYLOAD=true&keywords=%@&categoryId=868", [self.show.showName stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+    NSString *url = [NSString stringWithFormat:@"http://svcs.ebay.com/services/search/FindingService/v1?OPERATION-NAME=findItemsAdvanced&SERVICE-VERSION=1.0.0&SECURITY-APPNAME=ThomasFr-Victor-PRD-e3890c490-94272c2c&RESPONSE-DATA-FORMAT=JSON&REST-PAYLOAD=true&keywords=%@&categoryId=%@", [self.show.showName stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding], self.categoryNumber ];
     
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url relativeToURL:nil]];
     NSURLSessionDataTask * task = [[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {

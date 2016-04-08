@@ -12,5 +12,5 @@
 @interface ItemTableViewController : UIViewController
 
 @property (nonatomic, strong) Show *show;
-
+@property (nonatomic, strong) NSString *categoryNumber;
 @end
