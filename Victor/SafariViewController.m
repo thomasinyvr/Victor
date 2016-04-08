@@ -58,20 +58,6 @@
     
     self.itemImageView.image = downloadedImage;
     
-//    NSURLSessionDataTask *downloadPhotoTask = [[NSURLSession sharedSession] dataTaskWithURL:self.item.itemImageUrl completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-//        if (error != nil)
-//                                                                   {
-//                                                                       UIImage *downloadedImage = [UIImage imageWithData:data];
-//                                                                       self.itemImageView.image = downloadedImage;
-//                                                                      [self.itemImageView setNeedsLayout];
-//                                                                      [self.itemImageView setNeedsDisplay];
-//                                                                   } else {
-//                                                                       NSLog(@"eror is %@", error.localizedDescription);
-//                                                                   }
-//
-//    }];
-//     [downloadPhotoTask resume];
-    
 }
 
 @end
