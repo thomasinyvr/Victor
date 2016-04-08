@@ -45,13 +45,13 @@
     [videoView.rightAnchor constraintEqualToAnchor:self.blankVideoView.rightAnchor].active = YES;
     [videoView.bottomAnchor constraintEqualToAnchor:self.blankVideoView.bottomAnchor].active = YES;
     
-    [player play];
+    [self.player play];
     
     // Tell the player to do nothing when it stops playing
-    player.actionAtItemEnd = AVPlayerActionAtItemEndNone;
+    self.player.actionAtItemEnd = AVPlayerActionAtItemEndNone;
     
     // Listen for a notification when the player ends playing
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playerItemDidReachEnd:) name:AVPlayerItemDidPlayToEndTimeNotification object:[player currentItem]];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playerItemDidReachEnd:) name:AVPlayerItemDidPlayToEndTimeNotification object:[self.player currentItem]];
 }
 
 
