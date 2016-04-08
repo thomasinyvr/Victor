@@ -448,6 +448,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="Arrow3" destination="36L-Tb-D65" id="Ty4-yi-vdW"/>
                         <outlet property="tableView" destination="wXq-dQ-1Qq" id="rYt-r2-cCm"/>
                     </connections>
                 </viewController>
