@@ -497,6 +497,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lT6-PT-11v">
                                 <rect key="frame" x="20" y="28" width="63" height="63"/>
                                 <state key="normal" image="back_button_NoBG"/>
+                                <connections>
+                                    <segue destination="RU3-SI-8hC" kind="show" id="fAX-se-aHj"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcf-2Y-fJf" userLabel="itemNameLabel">
                                 <rect key="frame" x="16" y="369" width="343" height="50"/>
@@ -613,7 +616,7 @@
         <image name="notification_button" width="138" height="122"/>
         <image name="perspective2" width="840" height="525"/>
         <image name="rack_final" width="370" height="323"/>
-        <image name="shirt_final" width="280" height="64"/>
+        <image name="shirt_final" width="561" height="128"/>
         <image name="shows-title" width="232" height="50"/>
         <image name="soundtrack_0" width="280" height="64"/>
         <image name="speaker" width="59" height="286"/>
@@ -621,5 +624,8 @@
         <image name="start_button_0005_Layer-2" width="152" height="162"/>
         <image name="view_ebay" width="213" height="69"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="qkc-87-52G"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="0.20403913279999999" blue="0.14000993210000001" alpha="1" colorSpace="calibratedRGB"/>
 </document>
