@@ -408,7 +408,7 @@
                                                         <constraint firstAttribute="height" constant="44" id="0dS-tU-x1l"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="TimeBurner-Bold" family="TimeBurner" pointSize="16"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="textColor" red="0.87450980392156863" green="0.87450980392156863" blue="0.87450980392156863" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                     <variation key="default">
                                                         <mask key="constraints">
@@ -498,14 +498,14 @@
                                 <rect key="frame" x="20" y="28" width="63" height="63"/>
                                 <state key="normal" image="back_button_NoBG"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcf-2Y-fJf" userLabel="itemNameLabel">
-                                <rect key="frame" x="16" y="369" width="343" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcf-2Y-fJf" userLabel="itemNameLabel">
+                                <rect key="frame" x="16" y="369" width="343" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="40O-Dx-jq1"/>
+                                    <constraint firstAttribute="height" constant="50" id="SHm-md-77S"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="TimeBurner-Bold" family="TimeBurner" pointSize="16"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="TimeBurner-Bold" family="TimeBurner" pointSize="15"/>
+                                <color key="textColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Pq-v9-71s" userLabel="itemCurrentPriceLabel">
@@ -514,7 +514,7 @@
                                     <constraint firstAttribute="width" constant="109" id="rat-Qo-X14"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="TimeBurner-Bold" family="TimeBurner" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.84313725490196079" green="0.84313725490196079" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pb1-wm-wdn">
@@ -533,33 +533,32 @@
                                     <constraint firstAttribute="width" constant="90" id="P9B-W4-eVk"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="TimeBurner-Bold" family="TimeBurner" pointSize="21"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.87450980392156863" green="0.87450980392156863" blue="0.87450980392156863" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="o7W-Cb-4kO" firstAttribute="centerX" secondItem="NgP-Li-bub" secondAttribute="centerX" id="0on-dG-yu0"/>
+                            <constraint firstItem="bcf-2Y-fJf" firstAttribute="leading" secondItem="fG5-1n-oto" secondAttribute="leadingMargin" id="39p-ai-bHG"/>
                             <constraint firstAttribute="trailing" secondItem="1Gs-js-26I" secondAttribute="trailing" constant="107" id="3rb-XN-AZQ"/>
                             <constraint firstItem="9Pq-v9-71s" firstAttribute="leading" secondItem="NgP-Li-bub" secondAttribute="leading" id="6vt-dw-7vg"/>
                             <constraint firstItem="o7W-Cb-4kO" firstAttribute="leading" secondItem="fG5-1n-oto" secondAttribute="leading" id="7jF-cN-3Cl"/>
+                            <constraint firstItem="bcf-2Y-fJf" firstAttribute="centerX" secondItem="NgP-Li-bub" secondAttribute="centerX" id="8fr-4B-RBk"/>
                             <constraint firstAttribute="bottom" secondItem="9Pq-v9-71s" secondAttribute="bottom" constant="246" id="IXD-wq-X2o"/>
                             <constraint firstItem="o7W-Cb-4kO" firstAttribute="top" secondItem="fG5-1n-oto" secondAttribute="top" id="Iai-qh-8a9"/>
                             <constraint firstItem="lT6-PT-11v" firstAttribute="leading" secondItem="fG5-1n-oto" secondAttribute="leadingMargin" constant="4" id="Jbe-28-weK"/>
-                            <constraint firstItem="pb1-wm-wdn" firstAttribute="centerX" secondItem="bcf-2Y-fJf" secondAttribute="centerX" id="Na3-Mo-jdL"/>
+                            <constraint firstItem="bcf-2Y-fJf" firstAttribute="top" secondItem="5Rv-9N-bT7" secondAttribute="bottom" constant="3" id="Kpi-f8-94B"/>
                             <constraint firstAttribute="trailingMargin" secondItem="1Gs-js-26I" secondAttribute="trailing" constant="50" id="SON-Ew-2pM"/>
+                            <constraint firstItem="bcf-2Y-fJf" firstAttribute="trailing" secondItem="fG5-1n-oto" secondAttribute="trailingMargin" id="Thb-h7-qOa"/>
                             <constraint firstItem="9Pq-v9-71s" firstAttribute="leading" secondItem="fG5-1n-oto" secondAttribute="leading" constant="103" id="WPz-U1-fBc"/>
                             <constraint firstItem="9Pq-v9-71s" firstAttribute="baseline" secondItem="1Gs-js-26I" secondAttribute="firstBaseline" id="WeF-uy-onr"/>
                             <constraint firstItem="pb1-wm-wdn" firstAttribute="top" secondItem="1Gs-js-26I" secondAttribute="bottom" constant="62" id="ZmV-1I-eK7"/>
-                            <constraint firstItem="5Rv-9N-bT7" firstAttribute="centerX" secondItem="bcf-2Y-fJf" secondAttribute="centerX" id="Zvt-C2-jeU"/>
                             <constraint firstItem="o7W-Cb-4kO" firstAttribute="bottom" secondItem="luq-ug-YOy" secondAttribute="top" id="a9v-5n-xJh"/>
-                            <constraint firstItem="bcf-2Y-fJf" firstAttribute="trailing" secondItem="fG5-1n-oto" secondAttribute="trailingMargin" id="aDi-ci-MZI"/>
                             <constraint firstItem="NgP-Li-bub" firstAttribute="top" secondItem="lT6-PT-11v" secondAttribute="bottom" constant="21" id="bOc-vp-sjn"/>
                             <constraint firstItem="5Rv-9N-bT7" firstAttribute="top" secondItem="fG5-1n-oto" secondAttribute="top" constant="102" id="cNS-Ir-2kp"/>
                             <constraint firstItem="pb1-wm-wdn" firstAttribute="top" secondItem="9Pq-v9-71s" secondAttribute="bottom" constant="51" id="f8f-QT-mA0"/>
-                            <constraint firstItem="bcf-2Y-fJf" firstAttribute="top" secondItem="5Rv-9N-bT7" secondAttribute="bottom" constant="3" id="fCi-SH-Igy"/>
                             <constraint firstItem="NgP-Li-bub" firstAttribute="leading" secondItem="fG5-1n-oto" secondAttribute="leadingMargin" constant="36" id="hpl-Es-H6F"/>
-                            <constraint firstItem="bcf-2Y-fJf" firstAttribute="top" secondItem="NgP-Li-bub" secondAttribute="bottom" constant="38" id="iyJ-pJ-tX3"/>
                             <constraint firstItem="pb1-wm-wdn" firstAttribute="top" secondItem="9Pq-v9-71s" secondAttribute="bottom" constant="63" id="lNw-I7-Iht"/>
                             <constraint firstItem="luq-ug-YOy" firstAttribute="top" secondItem="pb1-wm-wdn" secondAttribute="bottom" constant="59" id="lRj-mz-NxD"/>
                             <constraint firstItem="o7W-Cb-4kO" firstAttribute="centerX" secondItem="5Rv-9N-bT7" secondAttribute="centerX" id="nwB-v2-xUz"/>
@@ -567,10 +566,10 @@
                             <constraint firstItem="5Rv-9N-bT7" firstAttribute="leading" secondItem="fG5-1n-oto" secondAttribute="leadingMargin" constant="-11" id="pzB-FR-VxO"/>
                             <constraint firstItem="1Gs-js-26I" firstAttribute="top" secondItem="bcf-2Y-fJf" secondAttribute="bottom" constant="54" id="rUs-2e-FCp"/>
                             <constraint firstItem="bcf-2Y-fJf" firstAttribute="top" secondItem="NgP-Li-bub" secondAttribute="bottom" constant="28" id="ul1-1Q-HpH"/>
-                            <constraint firstItem="bcf-2Y-fJf" firstAttribute="leading" secondItem="fG5-1n-oto" secondAttribute="leadingMargin" id="voQ-ov-uT8"/>
                             <constraint firstItem="5Rv-9N-bT7" firstAttribute="top" secondItem="lT6-PT-11v" secondAttribute="bottom" constant="11" id="wRa-C3-yF2"/>
                             <constraint firstItem="NgP-Li-bub" firstAttribute="centerX" secondItem="5Rv-9N-bT7" secondAttribute="centerX" id="xRQ-zI-93r"/>
                             <constraint firstItem="5Rv-9N-bT7" firstAttribute="centerX" secondItem="NgP-Li-bub" secondAttribute="centerX" id="z0O-nF-eeK"/>
+                            <constraint firstItem="bcf-2Y-fJf" firstAttribute="centerX" secondItem="pb1-wm-wdn" secondAttribute="centerX" id="zMX-N6-YEJ"/>
                             <constraint firstItem="1Gs-js-26I" firstAttribute="leading" secondItem="9Pq-v9-71s" secondAttribute="trailing" constant="8" symbolic="YES" id="zoz-i5-xmT"/>
                         </constraints>
                         <variation key="default">
