@@ -512,9 +512,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Pq-v9-71s" userLabel="itemCurrentPriceLabel">
-                                <rect key="frame" x="103" y="449" width="109" height="26"/>
+                                <rect key="frame" x="103" y="449" width="67" height="26"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="109" id="rat-Qo-X14"/>
+                                    <constraint firstAttribute="width" constant="67" id="rat-Qo-X14"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="TimeBurner-Bold" family="TimeBurner" pointSize="20"/>
                                 <color key="textColor" red="0.84313725490196079" green="0.84313725490196079" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
