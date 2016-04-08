@@ -19,6 +19,7 @@
 
 
 
+
 @end
 
 @implementation ItemTableViewController
@@ -91,12 +92,28 @@
     
     cell.categoryLabel.text = item.itemName;
     
+    cell.Arrow3.image = nil;
+    
+    NSURL *url = item.itemImageUrl;
+    NSURLSessionDataTask *imageTask = [[NSURLSession sharedSession]  dataTaskWithURL:url completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+        UIImage *thumbnail = [UIImage imageWithData:data];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            
+            ItemTableViewCell *innerCell = [self.tableView cellForRowAtIndexPath:indexPath];
+            innerCell.Arrow3.image = thumbnail;
+        });
+        
+    }];
+    
+    [imageTask resume];
     
     
     
-    UIImage *downloadedImage = [UIImage imageWithData:[NSData dataWithContentsOfURL:self.item.itemImageUrl]];
     
-    cell.Arrow3.image = downloadedImage;
+    
+//    UIImage *downloadedImage = [UIImage imageWithData:[NSData dataWithContentsOfURL:item.itemImageUrl]];
+//    
+//    cell.Arrow3.image = downloadedImage;
 
     
     return cell;
