@@ -15,7 +15,6 @@
 
 @interface CategoriesVC ()
 
-@property (weak, nonatomic) IBOutlet UIImageView *Arrow3;
 
 
 @property NSMutableArray *categories;
