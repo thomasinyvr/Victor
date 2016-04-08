@@ -26,14 +26,14 @@ static NSString * const reuseIdentifier = @"Cell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     Show *show1 = [[Show alloc]initWithImage: [UIImage imageNamed:@"Daredevil"]andName:@"Daredevil"];
-    Show *show2 = [[Show alloc]initWithImage: [UIImage imageNamed:@"Game_Of_Thrones"]andName:@"Game of Thrones"];
-    Show *show3 = [[Show alloc]initWithImage: [UIImage imageNamed:@"The_Flash"]andName:@"The Flash"];
-    Show *show4 = [[Show alloc]initWithImage: [UIImage imageNamed:@"The_Walking_Dead"]andName:@"The Walking Dead"];
-    Show *show5 = [[Show alloc]initWithImage: [UIImage imageNamed:@"Arrow3"]andName:@"Arrow"];
-    Show *show6 = [[Show alloc]initWithImage: [UIImage imageNamed:@"Vikings"]andName:@"Vikings"];
-    Show *show7 = [[Show alloc]initWithImage: [UIImage imageNamed:@"The_100_1"]andName:@"The 100"];
-    Show *show8 = [[Show alloc]initWithImage: [UIImage imageNamed:@"PLL_01"]andName:@"Walking Dead"];
-    Show *show9 = [[Show alloc]initWithImage: [UIImage imageNamed:@"Gotham1"]andName:@"Gotham"];
+    Show *show2 = [[Show alloc]initWithImage: [UIImage imageNamed:@"GOT0"]andName:@"Game of Thrones"];
+    Show *show3 = [[Show alloc]initWithImage: [UIImage imageNamed:@"FLASH0"]andName:@"The Flash"];
+    Show *show4 = [[Show alloc]initWithImage: [UIImage imageNamed:@"TWD"]andName:@"The Walking Dead"];
+    Show *show5 = [[Show alloc]initWithImage: [UIImage imageNamed:@"ARROW0"]andName:@"Arrow"];
+    Show *show6 = [[Show alloc]initWithImage: [UIImage imageNamed:@"VIKINGS0"]andName:@"Vikings"];
+    Show *show7 = [[Show alloc]initWithImage: [UIImage imageNamed:@"THE100_0"]andName:@"THE100_0"];
+    Show *show8 = [[Show alloc]initWithImage: [UIImage imageNamed:@"PLL0"]andName:@"Walking Dead"];
+    Show *show9 = [[Show alloc]initWithImage: [UIImage imageNamed:@"GOTHAM0"]andName:@"Gotham"];
     
     
     //    [shows addObject:show1];
