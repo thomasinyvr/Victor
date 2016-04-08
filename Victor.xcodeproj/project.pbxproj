@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0525215B1CB5AA6500F1E1C5 /* Cat_Video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 052521551CB5AA6500F1E1C5 /* Cat_Video.mp4 */; };
 		0525215D1CB5AA6500F1E1C5 /* PlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 052521581CB5AA6500F1E1C5 /* PlayerView.m */; };
 		052521621CB5AC6E00F1E1C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 052521611CB5AC6E00F1E1C5 /* Main.storyboard */; };
 		052521641CB5AC7E00F1E1C5 /* WelcomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 052521631CB5AC7E00F1E1C5 /* WelcomeVC.m */; };
@@ -34,7 +33,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		052521551CB5AA6500F1E1C5 /* Cat_Video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cat_Video.mp4; sourceTree = "<group>"; };
 		052521571CB5AA6500F1E1C5 /* PlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerView.h; sourceTree = "<group>"; };
 		052521581CB5AA6500F1E1C5 /* PlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerView.m; sourceTree = "<group>"; };
 		052521611CB5AC6E00F1E1C5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -154,7 +152,6 @@
 				FCCE51B01CB629DF00735124 /* SafariViewController.h */,
 				FCCE51B11CB629DF00735124 /* SafariViewController.m */,
 				05B64B631CB717EE0079E7CE /* victor_intro.mov */,
-				052521551CB5AA6500F1E1C5 /* Cat_Video.mp4 */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -233,7 +230,6 @@
 			files = (
 				05B64B611CB6F0650079E7CE /* timeburnerbold.ttf in Resources */,
 				05B64B621CB6F0650079E7CE /* timeburnernormal.ttf in Resources */,
-				0525215B1CB5AA6500F1E1C5 /* Cat_Video.mp4 in Resources */,
 				FCCE51B41CB62B2800735124 /* ThomasStoryboard.storyboard in Resources */,
 				FC1244631CB336CC00594E0D /* LaunchScreen.storyboard in Resources */,
 				FC1244601CB336CC00594E0D /* Assets.xcassets in Resources */,
