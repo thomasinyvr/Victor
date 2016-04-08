@@ -471,10 +471,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="374" height="667"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NgP-Li-bub">
-                                <rect key="frame" x="52" y="102" width="271" height="214"/>
+                                <rect key="frame" x="52" y="99" width="271" height="217"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="214" id="BpZ-9l-D6k"/>
+                                    <constraint firstAttribute="height" constant="217" id="BpZ-9l-D6k"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ipad_frame_0" translatesAutoresizingMaskIntoConstraints="NO" id="5Rv-9N-bT7">
@@ -482,7 +482,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lT6-PT-11v">
-                                <rect key="frame" x="20" y="20" width="63" height="63"/>
+                                <rect key="frame" x="20" y="17" width="63" height="63"/>
                                 <state key="normal" image="back_button_NoBG"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcf-2Y-fJf" userLabel="itemNameLabel">
