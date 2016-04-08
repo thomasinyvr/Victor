@@ -14,6 +14,5 @@
 
 @property (nonatomic, strong) Show *show;
 @property (nonatomic, strong) NSString *categoryNumber;
-@property (nonatomic, strong) Item *item;
 
 @end

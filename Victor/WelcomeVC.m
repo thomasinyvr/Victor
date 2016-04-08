@@ -10,6 +10,8 @@
 #import "Top10CVC.h"
 @interface WelcomeVC ()
 
+@property (nonatomic,strong)AVPlayer *player;
+
 @end
 
 @implementation WelcomeVC
@@ -22,9 +24,9 @@
     NSURL *videoURL = [[NSBundle mainBundle] URLForResource:@"victor_intro" withExtension:@"mov"];
     
     // Create a new player view controller with a player object
-    AVPlayer *player = [AVPlayer playerWithURL:videoURL];
+    self.player = [AVPlayer playerWithURL:videoURL];
     AVPlayerViewController *videoController = [[AVPlayerViewController alloc] init];
-    videoController.player = player;
+    videoController.player = self.player;
     
     // Hide the playback controls
     videoController.showsPlaybackControls = NO;
@@ -43,7 +45,16 @@
     [videoView.rightAnchor constraintEqualToAnchor:self.blankVideoView.rightAnchor].active = YES;
     [videoView.bottomAnchor constraintEqualToAnchor:self.blankVideoView.bottomAnchor].active = YES;
     
-    [player play];
+}
+
+-(void)viewDidDisappear:(BOOL)animated {
+    //  pause the video
+    [self.player pause];
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+    [self.player play];
+    // resume the video
 }
 
 - (void)didReceiveMemoryWarning {
