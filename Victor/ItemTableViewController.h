@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Show.h"
+#import "Item.h"
 
 @interface ItemTableViewController : UIViewController
 
