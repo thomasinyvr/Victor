@@ -93,6 +93,17 @@
     
 }
 
+-(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    [[cell contentView] setBackgroundColor:[UIColor clearColor]];
+    [[cell backgroundView] setBackgroundColor:[UIColor clearColor]];
+    [cell setBackgroundColor:[UIColor clearColor]];
+
+
+    
+}
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
     if ([segue.identifier isEqualToString:@"showSafariView"]){
