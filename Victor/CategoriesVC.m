@@ -10,9 +10,13 @@
 #import "Category.h"
 #import "CategoriesTVCell.h"
 #import "ItemTableViewController.h"
+#import "Item.h"
 
 
 @interface CategoriesVC ()
+
+@property (weak, nonatomic) IBOutlet UIImageView *Arrow3;
+
 
 @property NSMutableArray *categories;
 
@@ -72,6 +76,10 @@
     Category *category = self.categories[indexPath.row];
     
     cell.categoryLabel.text = category.title;
+    
+    UIImage *downloadedImage = [UIImage imageWithData:[NSData dataWithContentsOfURL:self.item.itemImageUrl]];
+    
+    self.Arrow3.image = downloadedImage;
     
     return cell;
     

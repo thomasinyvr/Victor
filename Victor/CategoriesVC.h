@@ -8,9 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "Show.h"
+#import "Item.h"
 
 @interface CategoriesVC : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) Show *show;
+@property (nonatomic, strong) Item *item;
+
 
 @end
