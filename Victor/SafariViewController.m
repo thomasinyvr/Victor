@@ -8,6 +8,7 @@
 
 #import "SafariViewController.h"
 #import "Item.h"
+#import "ItemTableViewController.h"
 
 @interface SafariViewController ()
 
@@ -69,6 +70,6 @@
         itemsVC.categoryNumber = sender;
         
     }
-
+}
 
 @end

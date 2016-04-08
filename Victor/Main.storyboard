@@ -498,7 +498,7 @@
                                 <rect key="frame" x="20" y="28" width="63" height="63"/>
                                 <state key="normal" image="back_button_NoBG"/>
                                 <connections>
-                                    <segue destination="RU3-SI-8hC" kind="show" id="fAX-se-aHj"/>
+                                    <segue destination="RU3-SI-8hC" kind="show" identifier="showItemTableView" id="fAX-se-aHj"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcf-2Y-fJf" userLabel="itemNameLabel">
@@ -520,8 +520,8 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pb1-wm-wdn">
-                                <rect key="frame" x="81" y="538" width="213" height="70"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pb1-wm-wdn">
+                                <rect key="frame" x="80" y="538" width="213" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="Pqn-G8-J7F"/>
                                 </constraints>
@@ -626,7 +626,7 @@
         <image name="view_ebay" width="213" height="69"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="qkc-87-52G"/>
+        <segue reference="fAX-se-aHj"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="0.20403913279999999" blue="0.14000993210000001" alpha="1" colorSpace="calibratedRGB"/>
 </document>
