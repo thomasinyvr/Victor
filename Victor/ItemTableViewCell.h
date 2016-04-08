@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ItemTableViewCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UIImageView *Arrow3;
+@property (weak, nonatomic) IBOutlet UILabel *categoryLabel;
 
 @end

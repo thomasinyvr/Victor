@@ -8,14 +8,14 @@
 
 #import "ItemTableViewController.h"
 #import "Item.h"
-#import "CategoriesTVCell.h"
+#import "ItemTableViewCell.h"
 #import "SafariViewController.h"
+
 
 @interface ItemTableViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic) NSMutableArray *items;
-@property (weak, nonatomic) IBOutlet UIImageView *Arrow3;
 
 
 
@@ -85,15 +85,18 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    CategoriesTVCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    ItemTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
     Item *item = self.items[indexPath.row];
     
     cell.categoryLabel.text = item.itemName;
     
+    
+    
+    
     UIImage *downloadedImage = [UIImage imageWithData:[NSData dataWithContentsOfURL:self.item.itemImageUrl]];
     
-    self.Arrow3.image = downloadedImage;
+    cell.Arrow3.image = downloadedImage;
 
     
     return cell;

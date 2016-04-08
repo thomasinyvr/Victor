@@ -383,7 +383,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="wNC-61-nzN" customClass="CategoriesTVCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="wNC-61-nzN" customClass="ItemTableViewCell">
                                         <rect key="frame" x="0.0" y="28" width="335" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wNC-61-nzN" id="vvs-Je-GeQ">
@@ -426,7 +426,8 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <outlet property="categoryLabel" destination="bpu-D2-xU9" id="bci-MG-JVS"/>
+                                            <outlet property="Arrow3" destination="36L-Tb-D65" id="3We-Kb-4bn"/>
+                                            <outlet property="categoryLabel" destination="bpu-D2-xU9" id="znA-m5-TvW"/>
                                             <segue destination="Dnn-DN-UqN" kind="show" identifier="showSafariView" id="Mwr-wu-CNE"/>
                                         </connections>
                                     </tableViewCell>
@@ -448,7 +449,6 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="Arrow3" destination="36L-Tb-D65" id="Bcy-Ga-9TX"/>
                         <outlet property="tableView" destination="wXq-dQ-1Qq" id="rYt-r2-cCm"/>
                     </connections>
                 </viewController>
